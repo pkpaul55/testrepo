@@ -16,4 +16,4 @@ jobs:
       - name: restore
         run: dotnet restore ./SampleApp/SampleApp/SampleApp.csproj
       - name: Build App
-        run: dotnet build -c Release --no-restore 
+        run: dotnet build ./SampleApp/SampleApp/SampleApp.csproj -c Release --no-restore 
